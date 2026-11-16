@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Exercice 1 : Variables, conversions et boîtes de dialogue -->
+     <button onclick="demarrer()">Commencer</button>
+
+     <br><br>
+
+    <!-- Exercice 2 : Conditions, boucles et fonctions -->
+     <h3>Outils de calcul</h3>
+     <label for="n"">Nombre:</label><input id="n" type="number">
+     <button onclick="somme()">somme</button>
+     <button onclick="pairs()">pairs</button>
+     <br><br>
+     somme: <p id="result1"></p><br>
+     result1 <p id="result2"></p>
+
+     <br><br>
+
+    <!-- Exercice 3 : Sélection et manipulation des éléments -->
+    <section id="cours">
+        <h2 id="titreCours">Découvrir JavaScript</h2>
+        <p class="chapitre">Les variables</p>
+        <p class="chapitre important">Les fonctions</p>
+        <p class="chapitre">Les événements</p>
+        <button type="button" id="modifier" onclick="modifier()">
+            Modifier la présentation
+        </button>
+    </section>
+    
+    <br><br>
+    <!-- Exercice 4 : Événements, propriétés, méthodes et this -->
+    <section>
+        <h2>Zone interactive</h2>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" onfocus="mettreEnEvidence(this)" onblur="retablirStyle(this)"
+            oninput="afficherSaisie(this)">
+        <p id="apercu"></p>
+        <button type="button" id="selectionner" onclick="fs()">
+            Sélectionner le texte
+        </button>
+        <p id="survol" onmouseover="changerCouleur(this)" onmouseout="retablirCouleur(this)">
+            Survolez ce texte.
+        </p>
+    </section>
+     
+     
+
+
+    
+    
+</body>
+</html>
